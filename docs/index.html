@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mastering AI/ML Engineering Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6 overflow-x-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-[25%_40%_35%] gap-6 max-w-7xl mx-auto">
+
+    <!-- Left Column: Learning Resources -->
+    <aside class="bg-white shadow-md rounded-xl p-6 space-y-8 max-w-md mx-auto lg:max-w-none">
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mb-4">📚 Learn AI & ML (Courses & Books)</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="text-blue-600 hover:underline">Deep Learning Specialization (Andrew Ng)</a> – Coursera</li>
+          <li><a href="https://cs230.stanford.edu" target="_blank" class="text-blue-600 hover:underline">CS230: Deep Learning (Stanford)</a> – Video lectures & notes</li>
+          <li><a href="https://fast.ai" target="_blank" class="text-blue-600 hover:underline">fast.ai</a> – Practical deep learning for coders</li>
+          <li><a href="https://machinelearningmastery.com/start-here/" target="_blank" class="text-blue-600 hover:underline">Machine Learning Mastery</a> – Tutorials & books</li>
+          <li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" class="text-blue-600 hover:underline">Google ML Crash Course</a> – Free practical ML course</li>
+          <li><a href="https://www.udacity.com/course/intro-to-machine-learning-with-pytorch--ud188" target="_blank" class="text-blue-600 hover:underline">Intro to Machine Learning with PyTorch</a> – Udacity free course</li>
+          <li><a href="https://www.edx.org/professional-certificate/ibm-applied-ai" target="_blank" class="text-blue-600 hover:underline">IBM Applied AI Professional Certificate</a> – edX</li>
+          <li><a href="https://www.deeplearningbook.org" target="_blank" class="text-blue-600 hover:underline">Deep Learning Book (Goodfellow et al.)</a> – Comprehensive textbook</li>
+          <li><a href="https://www.patterns.dev" target="_blank" class="text-blue-600 hover:underline">Machine Learning Patterns</a> – Reusable solutions</li>
+          <li><a href="https://paperswithcode.com/" target="_blank" class="text-blue-600 hover:underline">Papers with Code</a> – Latest papers + code</li>
+          <li><a href="https://www.kaggle.com/learn" target="_blank" class="text-blue-600 hover:underline">Kaggle Learn</a> – Hands-on ML tutorials</li>
+          <li><a href="https://www.datacamp.com" target="_blank" class="text-blue-600 hover:underline">DataCamp</a> – Data science & ML courses (paid/free)</li>
+          <li><a href="https://scikit-learn.org/stable/tutorial/index.html" target="_blank" class="text-blue-600 hover:underline">scikit-learn Tutorials</a> – Classic ML library</li>
+          <li><a href="https://deeplearning.ai" target="_blank" class="text-blue-600 hover:underline">deeplearning.ai</a> – AI education & certifications</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Middle Column: Projects & Practice Ideas -->
+    <aside class="bg-white shadow-md rounded-xl p-6 space-y-8 max-w-2xl mx-auto lg:max-w-none">
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mb-4">🚀 AI/ML Projects & Practice Ideas</h2>
+
+        <button
+          type="button"
+          class="w-full flex justify-between items-center bg-gray-100 hover:bg-gray-200 p-3 rounded-md font-semibold text-gray-800"
+          aria-expanded="false"
+          aria-controls="projectList"
+          id="projectToggleBtn"
+          onclick="toggleSection('projectList', this)"
+        >
+          🧪 Practice Project Ideas (Click to Toggle)
+          <span id="projectToggleIcon">➕</span>
+        </button>
+
+        <ul
+          id="projectList"
+          class="hidden list-disc pl-5 text-gray-700 mt-4 space-y-1 text-sm transition-all duration-300"
+          aria-labelledby="projectToggleBtn"
+        >
+          <!-- Beginner -->
+          <li><strong>Spam Classifier</strong> – Naive Bayes & text processing</li>
+          <li><strong>Image Classifier</strong> – CNN with TensorFlow or PyTorch</li>
+          <li><strong>Sentiment Analysis</strong> – Movie reviews or Twitter data</li>
+          <li><strong>Digit Recognition</strong> – MNIST dataset CNN</li>
+          <li><strong>House Price Prediction</strong> – Regression with scikit-learn</li>
+          <li><strong>Chatbot</strong> – Rule-based or simple ML chatbot</li>
+
+          <!-- Intermediate -->
+          <li><strong>Face Recognition</strong> – Using OpenCV and deep learning</li>
+          <li><strong>Object Detection</strong> – YOLO or SSD models</li>
+          <li><strong>Recommendation System</strong> – Collaborative filtering</li>
+          <li><strong>Time Series Forecasting</strong> – Stock prices or weather</li>
+          <li><strong>GAN for Image Generation</strong> – Generative adversarial networks</li>
+          <li><strong>Speech Recognition</strong> – Using libraries like DeepSpeech</li>
+          <li><strong>Neural Style Transfer</strong> – Artistic image transformation</li>
+
+          <!-- Advanced -->
+          <li><strong>Transformer-based NLP Model</strong> – Fine-tune BERT or GPT</li>
+          <li><strong>Reinforcement Learning Agent</strong> – OpenAI Gym environments</li>
+          <li><strong>Multi-modal AI</strong> – Combine text, image, audio inputs</li>
+          <li><strong>AutoML System</strong> – Build a model selection pipeline</li>
+          <li><strong>Explainable AI Dashboard</strong> – Interpretability tools</li>
+
+          <!-- Open Source & Real-world -->
+          <li><a href="https://github.com/tensorflow/tensorflow" target="_blank" class="text-blue-600 hover:underline font-semibold">TensorFlow</a> – ML framework by Google</li>
+          <li><a href="https://github.com/pytorch/pytorch" target="_blank" class="text-blue-600 hover:underline font-semibold">PyTorch</a> – ML framework by Facebook</li>
+          <li><a href="https://github.com/scikit-learn/scikit-learn" target="_blank" class="text-blue-600 hover:underline font-semibold">scikit-learn</a> – Classic ML library</li>
+          <li><a href="https://github.com/huggingface/transformers" target="_blank" class="text-blue-600 hover:underline font-semibold">Hugging Face Transformers</a> – State-of-the-art NLP</li>
+          <li><a href="https://github.com/openai/gym" target="_blank" class="text-blue-600 hover:underline font-semibold">OpenAI Gym</a> – Reinforcement learning environments</li>
+          <li><a href="https://github.com/fastai/fastai" target="_blank" class="text-blue-600 hover:underline font-semibold">fastai</a> – Simplified deep learning</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Right Column: Tools, Platforms, APIs & Interview Prep -->
+    <aside class="bg-white shadow-md rounded-xl p-6 space-y-8 max-w-md mx-auto lg:max-w-none">
+
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mb-4">🔧 Tools, Platforms & APIs</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://colab.research.google.com" target="_blank" class="text-blue-600 hover:underline">Google Colab</a> – Free Jupyter notebooks with GPUs</li>
+          <li><a href="https://kaggle.com" target="_blank" class="text-blue-600 hover:underline">Kaggle</a> – Datasets, competitions & notebooks</li>
+          <li><a href="https://www.tensorflow.org" target="_blank" class="text-blue-600 hover:underline">TensorFlow</a> – End-to-end ML framework</li>
+          <li><a href="https://pytorch.org" target="_blank" class="text-blue-600 hover:underline">PyTorch</a> – Flexible deep learning</li>
+          <li><a href="https://scikit-learn.org" target="_blank" class="text-blue-600 hover:underline">scikit-learn</a> – Classic ML toolkit</li>
+          <li><a href="https://huggingface.co" target="_blank" class="text-blue-600 hover:underline">Hugging Face</a> – NLP models & datasets</li>
+          <li><a href="https://www.weightsandbiases.com" target="_blank" class="text-blue-600 hover:underline">Weights & Biases</a> – Experiment tracking</li>
+          <li><a href="https://mlflow.org" target="_blank" class="text-blue-600 hover:underline">MLflow</a> – ML lifecycle management</li>
+          <li><a href="https://neptune.ai" target="_blank" class="text-blue-600 hover:underline">Neptune.ai</a> – Metadata tracking & monitoring</li>
+          <li><a href="https://airflow.apache.org" target="_blank" class="text-blue-600 hover:underline">Apache Airflow</a> – Workflow orchestration</li>
+          <li><a href="https://streamlit.io" target="_blank" class="text-blue-600 hover:underline">Streamlit</a> – Build ML web apps easily</li>
+          <li><a href="https://dash.plotly.com" target="_blank" class="text-blue-600 hover:underline">Plotly Dash</a> – Interactive analytic apps</li>
+          <li><a href="https://www.datawrapper.de" target="_blank" class="text-blue-600 hover:underline">Datawrapper</a> – Quick charts & maps</li>
+          <li><a href="https://paperswithcode.com/sota" target="_blank" class="text-blue-600 hover:underline">Papers with Code</a> – Latest SOTA papers & code</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mt-8 mb-4">📈 Interview & Algo Practice</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://leetcode.com" target="_blank" class="text-blue-600 hover:underline">LeetCode</a> – Coding challenges & algorithms</li>
+          <li><a href="https://www.hackerrank.com" target="_blank" class="text-blue-600 hover:underline">HackerRank</a> – Coding contests & challenges</li>
+          <li><a href="https://www.interviewbit.com" target="_blank" class="text-blue-600 hover:underline">InterviewBit</a> – Interview preparation</li>
+          <li><a href="https://www.pramp.com" target="_blank" class="text-blue-600 hover:underline">Pramp</a> – Free mock interviews</li>
+          <li><a href="https://www.codingame.com" target="_blank" class="text-blue-600 hover:underline">CodinGame</a> – Fun coding challenges</li>
+          <li><a href="https://exercism.io" target="_blank" class="text-blue-600 hover:underline">Exercism</a> – Coding practice & mentorship</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mt-8 mb-4">📖 Documentation & Reference</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://scikit-learn.org/stable/documentation.html" target="_blank" class="text-blue-600 hover:underline">scikit-learn Docs</a></li>
+          <li><a href="https://pytorch.org/docs/stable/index.html" target="_blank" class="text-blue-600 hover:underline">PyTorch Docs</a></li>
+          <li><a href="https://www.tensorflow.org/api_docs" target="_blank" class="text-blue-600 hover:underline">TensorFlow API Docs</a></li>
+          <li><a href="https://huggingface.co/docs" target="_blank" class="text-blue-600 hover:underline">Hugging Face Docs</a></li>
+          <li><a href="https://numpy.org/doc/" target="_blank" class="text-blue-600 hover:underline">NumPy Docs</a></li>
+          <li><a href="https://pandas.pydata.org/docs/" target="_blank" class="text-blue-600 hover:underline">Pandas Docs</a></li>
+          <li><a href="https://matplotlib.org/stable/contents.html" target="_blank" class="text-blue-600 hover:underline">Matplotlib Docs</a></li>
+          <li><a href="https://www.kaggle.com/docs" target="_blank" class="text-blue-600 hover:underline">Kaggle Docs & Tutorials</a></li>
+        </ul>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <script>
+    function toggleSection(id, btn) {
+      const section = document.getElementById(id);
+      const icon = document.getElementById('projectToggleIcon');
+      const isHidden = section.classList.toggle('hidden');
+      icon.textContent = isHidden ? '➕' : '➖';
+      btn.setAttribute('aria-expanded', !isHidden);
+    }
+  </script>
+</body>
+</html>
